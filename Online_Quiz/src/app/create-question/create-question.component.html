@@ -1,0 +1,11 @@
+<div class="container-fluid" style="margin-left:35%">
+    <h1>Create a new question in the given format</h1><br><br>
+
+    <label  for="question">Question</label>
+    <input style="width:250px" class="form-control" name="question" type="text" [(ngModel)]="question.name" placeholder="Enter Question Name"/>
+    <label for="answer">Answer</label>
+    <input style="width:250px" class="form-control" name="answer" type="textarea" [(ngModel)]="question.answer" placeholder="Enter Answer"/>
+    <label for="Category">Category</label>
+    <input style="width:250px" class="form-control" name="Category" type="text" [(ngModel)]="question.category" placeholder="Enter Category Name"/>
+    <button type="button" (click)="createQuestion()">Create Question</button>
+</div>

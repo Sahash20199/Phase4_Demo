@@ -1,0 +1,52 @@
+<div class="sticky">
+<div class="container">
+  <nav class="nav ">
+    
+
+    <br>
+    
+    <button  style=" text-decoration: none; ">
+      <a class="nav-link" routerLink="/deleteQuestion" >Delete Question</a>
+    </button>
+    <button  style=" text-decoration: none;">
+      <a class="nav-link" routerLink="/questionsList" >Questions list</a>
+    </button>
+    <button   style="  text-decoration: none;">
+      <a class="nav-link" routerLink="/searchQuestion" >Search Question</a>
+    </button>
+  </nav>
+</div>
+</div>
+<br><br>
+
+<table>
+  <tr>
+    <td>
+      <button class="btn btn-warning " style=" text-decoration: none">
+        <a routerLink="/createQuestion">Create Question</a>
+      </button>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <button class="btn btn-warning " style=" text-decoration: none">
+        <a routerLink="/updateQuestion" >Update Question</a>
+      </button>
+    </td>
+  </tr>
+</table>
+
+<div class="container-fluid">
+    <div class="wrapper">
+        <div class="card" style="margin-left: 30%;width: 45%;" *ngFor="let question of questionList">
+            <div class="card-body text-center">
+                <h5 class="card-title">{{question.id}}</h5>
+                <p class="card-text">Id : {{question.id}}</p>
+                <p class="card-text">Category : {{question.category}}</p>
+                <p class="card-text">Name : {{question.name}}</p>
+                <p class="card-text">Answer : {{question.answer}}</p>
+                <button ><a style="color: bisque;" routerLink="/updateQuestion" >Update Question</a></button>
+            </div>
+        </div>
+    </div>
+</div>

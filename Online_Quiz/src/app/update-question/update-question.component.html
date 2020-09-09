@@ -1,0 +1,18 @@
+<div class="container-fluid" style="margin-left: 40%" >
+    <h2>Update Question by Id</h2>
+    <div class="form-group">
+        <label for="id" >ID</label>
+        <select style="width: 250px;" id={{question.id}} [(ngModel)]="question.id" class="form-control" name="id"  >
+            <option selected>Select an option</option>
+            <option *ngFor="let question of questionList">{{question.id}}</option>
+        </select>
+        <label for="question">Question</label>
+    </div>
+    <input style="width: 250px;" class="form-control" name="question" type="text" [(ngModel)]="question.name" placeholder="Enter Question Name"/>
+    <label for="answer">Answer</label>
+    <input style="width: 250px;" class="form-control" name="answer" type="textarea" [(ngModel)]="question.answer" placeholder="Enter Answer"/>
+    <label for="Category">Category</label>
+    <input style="width: 250px;" class="form-control" name="Category" type="text" [(ngModel)]="question.category" placeholder="Enter Category Name"/>
+    <button  type="button" (click)="updateQuestion()">Update Question</button>
+
+</div>

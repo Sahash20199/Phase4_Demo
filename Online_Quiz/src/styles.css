@@ -1,0 +1,33 @@
+
+button{
+    padding: 15px 30px;
+    border: 2px solid bisque;
+    border-radius: 20px;
+    width: 150px;
+    outline: none;
+    cursor: pointer;
+    top: 50%;
+    bottom: 50%;
+    margin: 10px;
+    background-color: #343a40;
+    color: bisque;
+    text-decoration: none;
+}
+body{
+    background-color: #e6f0ef;
+}
+.card{
+    background-color: rgba(0, 0, 0, 0.25);
+    border: rgba(0, 0, 0, 0.2);
+    margin: 5px;
+    color: bisque;
+    font-weight: 700;
+  }
+
+.form-control {
+    border: 1px solid #fff;
+    background-color: transparent;
+}
+option{
+    color: linear-gradient(to left, #a74bce, #f0aa15);
+}

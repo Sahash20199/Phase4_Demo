@@ -1,0 +1,10 @@
+<div class="container-fluid" style="margin-left:35%">
+    <h2>Delete Question by Id</h2>
+    <div class="form-group" >
+        <label for="id" >ID</label>
+        <select style="width:250px" id={{question.id}} [(ngModel)]="question.id" class="form-control" name="id"  >
+            <option selected>Select an option</option>
+            <option *ngFor="let question of questionList">{{question.id}}</option>
+        </select>
+        <button  type="submit" (click)="deleteQuestion(question.id)">Delete Question</button>
+    </div>

@@ -1,0 +1,25 @@
+
+
+<div class="container-fluid">
+    <div class="wrapper">
+        <h2>Update Question by Id</h2>
+        <button (click)="submit()">Submit</button>
+        <br>
+    </div>
+    <br>
+    <i> *** Dont consider Question Id ***</i>
+    <div class="card" style="width: 45%; " *ngFor="let question of questionList">
+    <div class="form-group">
+        <h1>{{question.id}}</h1>
+        <label for="question">Question</label>
+    </div>
+    <p style="margin-left: 25px;">{{question.name}}</p>
+    <label for="Category">Category</label>
+    <p style="margin-left: 25px;">{{question.category}}</p>
+    <label for="answer">Answer</label>
+    <input style="margin-left: 25px;" class="form-control" required name="question" type="text" [(ngModel)]="answer" placeholder="Enter answer"/>
+    <br>
+    <button style="width: 250px;"  type="button" (click)="result(question.id)">Update Question</button>
+    <br>
+</div>
+</div>

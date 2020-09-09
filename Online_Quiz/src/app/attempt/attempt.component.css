@@ -1,0 +1,13 @@
+
+.btn{
+    width: 300px;
+    margin: 10px;
+}
+.card{
+  background-color: rgba(0, 0, 0, 0.25);
+  border: rgba(0, 0, 0, 0.2);
+  margin: 5px;
+}
+input{
+  width: 75%;
+}
